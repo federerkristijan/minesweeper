@@ -1,0 +1,17 @@
+.Grid {
+  width: 360px;
+  height: 360px;
+  background-color: red;
+}
+
+.Field {
+  width: 36px;
+  height: 36px;
+  background-color: blue;
+  border: solid 1px black;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 36px;
+  color: yellow;
+}
