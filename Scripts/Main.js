@@ -53,7 +53,7 @@ function bindUI(gameState) {
 
     if (gameState[i] == true) {
       // starting game, without visible mines
-      fieldDom.innerHTML = "*";
+      //fieldDom.innerHTML = "*";
 
 
     }
@@ -66,9 +66,11 @@ function checkForEndGame(cellIndex) {
 
   //returns 0: for defeat, 1: win, 2: still in progress
 
-  let result = 2; //still in pgoress by default
+  // still in progress by default
+  let result = 2;
   let mineClicked = gameState[cellIndex];
 
+  // end game
   if (mineClicked) result  = 0;
 
   //todo: check for victory
@@ -137,6 +139,7 @@ function gridCell_onClick(e){
     isGameOver = true;
     // do you wanna play a new game, chekiraj da izmijenis ok/cancel u yes/no
     confirm("Do you want to play a new game?")
+    // autoamtically switches to a new screen, not needed!
     //gridDom.innerHTML = "Game Over";
     //todo: refacture
     //alert("You're dead!")
