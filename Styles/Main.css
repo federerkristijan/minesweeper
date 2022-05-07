@@ -1,5 +1,5 @@
 .Container {
-  /*align-items: center; */
+  margin: 3px;
 }
 
 .Grid {
@@ -32,14 +32,11 @@
 }
 
 .Grid .Mine {
-  background-color: black;
+  background-color: rgb(153, 156, 198);
 }
 
 .Grid .Empty {
   opacity: 0.7;
-
-
   background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffindicons.com%2Ffiles%2Ficons%2F183%2Fgis_gps_map%2F128%2Fflag1rightgreen2.png&f=1&nofb=1);
-
   background-size: cover;
 }
