@@ -1,12 +1,22 @@
 .Grid {
-  width: 360px;
-  height: 360px;
-  background-color: red;
+  width: 450px;
+  height: 450px;
+  align-items: center;
+  margin-left: 360px;
+  margin-top: 60px;
+}
+
+.Questions {
+  float: left;
+  margin: 10px;
+  background-color: aqua;
+  width: 100px;
+  margin-left: 40px;
 }
 
 .Field {
-  width: 36px;
-  height: 36px;
+  width: 45px;
+  height: 45px;
   background-color: blue;
   border: solid 1px black;
   float: left;
