@@ -7,20 +7,29 @@
     </head>
  <body>
     <div class="container">
+      <div class="Question">
+        <div class="Question1">
+          You have won!
+          <br/>
+          <input type="button" value="Start new game" onclick="startNewGame()" />
+        </div>
+        <div class="Question2">
+          You have Lose!
+          <br/>
+          <input type="button" value="Start new game" />
+        </div>
+      </div>
       <div class="Grid">
       </div>
     </div>
-
-    <div style="margin:10px;background:Red">
-      You have won!
-<br/>
-      <input type="button" value="Start new game" onclick="startNewGame()" />
-    </div>
-    <div style="margin:10px;background:Red">
-      You have Lose!
-      <br/>
-      <input type="button" value="Start new game" />
-
-    </div>
   </body>
+  <script>
+    let val = confirm(confirm("Do you want to play a new game?"));
+    if (val == true) {
+    // here comes new game
+    return bindUI(gameState);
+    } else {
+    // here coems nothing
+    }
+    </script>
 </html>
