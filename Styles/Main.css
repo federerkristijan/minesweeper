@@ -34,6 +34,7 @@
 .Grid .Mine {
   background-color: black;
   background-image: 💣 ;
+  background-size: cover;
 }
 
 .Grid .Empty {
