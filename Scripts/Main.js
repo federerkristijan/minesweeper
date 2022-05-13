@@ -54,7 +54,7 @@ function bindUI(gameState) {
 
     if (gameState[i] == true) {
       // starting game, with visible mines. not needed
-      //fieldDom.innerHTML = "*";
+      fieldDom.innerHTML = "*";
     }
 
     fieldDom.addEventListener("click", gridCell_onClick);
@@ -72,7 +72,7 @@ function checkForEndGame(cellIndex) {
   // end game
   if (mineClicked) result  = 0;
 
-  //todo: check for victory
+  // win
   if (mineClicked) result = 1;
 
   return result;
@@ -137,7 +137,6 @@ function gridCell_onClick(e){
     isGameOver = true;
     // confirm("Do you want to play a new game?")
     // autoamtically switches to a new screen, not needed!
-
     //gridDom.innerHTML = "Game Over";
     //todo: refacture
     alert("You're dead!")
