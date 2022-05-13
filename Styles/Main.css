@@ -1,3 +1,7 @@
+.Container {
+  margin: 3px;
+}
+
 .Grid {
   width: 460px;
   height: 460px;

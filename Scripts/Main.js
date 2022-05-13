@@ -137,6 +137,7 @@ function gridCell_onClick(e){
     isGameOver = true;
     // confirm("Do you want to play a new game?")
     // autoamtically switches to a new screen, not needed!
+
     //gridDom.innerHTML = "Game Over";
     //todo: refacture
     alert("You're dead!")
