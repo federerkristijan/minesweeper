@@ -24,12 +24,16 @@
     </div>
   </body>
   <script type="text/javascript">;
-    let val = confirm(confirm("Do you want to play a new game?"));
-    if (val == true) {
-    // here comes new game
-    return startNewGame();
-    } else {
-    // here comes nothing
+    function toggleQuestion(e) {
+      document.getElementsByClassName("Question").style.display = "none";
+      function showQuestion(e) {
+      if (gameProgressState == 1)
+        return document.getElementsByClassName("Won").style.display = "block";
+
+      else
+        return document.getElementsByClassName("Lost").style.display = "block";
+      };
     }
-    </script> -->
+
+    </script>
 </html>

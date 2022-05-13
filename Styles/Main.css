@@ -1,6 +1,7 @@
 .Container {
   margin: 3px;
 }
+
 .Grid {
   width: 460px;
   height: 460px;
@@ -31,7 +32,8 @@
 }
 
 .Grid .Mine {
-  background-color: rgb(153, 156, 198);
+  background-color: black;
+  background-image: 💣 ;
 }
 
 .Grid .Empty {

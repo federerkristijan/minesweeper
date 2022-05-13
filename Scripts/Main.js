@@ -135,20 +135,16 @@ function gridCell_onClick(e){
     targetCellDom.classList.add("Mine");
 
     isGameOver = true;
-    
-    document.getElementById("Won") = function() {
-      document.getElementById("Won").style.display = "none";
-    }
-    // automatically switches to a new screen, not needed!
+    // confirm("Do you want to play a new game?")
+    // autoamtically switches to a new screen, not needed!
+
     //gridDom.innerHTML = "Game Over";
     //todo: refacture
-  alert("You're dead!")
+    alert("You're dead!")
   }
   //game over - player won
   else if (gameProgressState == 1) {
-    document.getElementById("Lost") = function() {
-      document.getElementById("Lost").style.display = "none";
-    }
+    //document.querySelector(".Question1").style.display = "block";
   }
   //game is still in progress
   else if (gameProgressState == 2) {
