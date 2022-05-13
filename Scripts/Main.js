@@ -53,8 +53,8 @@ function bindUI(gameState) {
     gridDom.appendChild(fieldDom);
 
     if (gameState[i] == true) {
-      // starting game, without visible mines
-      fieldDom.innerHTML = "*";
+      // starting game, with visible mines. not needed
+      //fieldDom.innerHTML = "*";
     }
 
     fieldDom.addEventListener("click", gridCell_onClick);
@@ -135,7 +135,7 @@ function gridCell_onClick(e){
     targetCellDom.classList.add("Mine");
 
     isGameOver = true;
-
+    
     document.getElementById("Won") = function() {
       document.getElementById("Won").style.display = "none";
     }

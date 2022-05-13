@@ -8,13 +8,13 @@
  <body>
     <div class="container">
       <div class="Question">
-        <div class="Won">
+        <div class="Question1" style = "hidden">
           You have won!
           <br/>
           <input type="button" value="Start new game" onclick="startNewGame()" />
         </div>
-        <div class="Lost">
-          You have Lost!
+        <div class="Question2" style = "hidden">
+          You have Lose!
           <br/>
           <input type="button" value="Start new game" onclick="startNewGame()" />
         </div>
@@ -23,7 +23,7 @@
       </div>
     </div>
   </body>
-  <!-- <script>
+  <script type="text/javascript">;
     let val = confirm(confirm("Do you want to play a new game?"));
     if (val == true) {
     // here comes new game
