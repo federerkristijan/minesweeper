@@ -32,10 +32,12 @@
 }
 
 .Grid .Mine {
-  background-color: black;
-  background-image: 💣 ;
-  background-size: cover;
+  background-color: rgb(228, 148, 119);
+  background-image: url(../Images/bomb.svg);
+  background-size: contain;
+  /*tak. hvala*/
 }
+
 
 .Grid .Empty {
   opacity: 0.7;
