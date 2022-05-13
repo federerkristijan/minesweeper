@@ -7,11 +7,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   startNewGame();
 });
 
+//starts new game
 function startNewGame (){
 
   let gridSize_x = 10;
   let gridSize_y = 10;
-  let mineCount = 10;
+  let mineCount = 20;
 
   gameState = generatedGameState(gridSize_x, gridSize_y, mineCount);
 
@@ -72,8 +73,7 @@ function checkForEndGame(cellIndex) {
   if (mineClicked) result  = 0;
 
   //todo: check for victory
-
-
+  if (mineClicked) result = 1;
 
   return result;
 }
@@ -140,7 +140,7 @@ function gridCell_onClick(e){
     // autoamtically switches to a new screen, not needed!
     //gridDom.innerHTML = "Game Over";
     //todo: refacture
-    //alert("You're dead!")
+  alert("You're dead!")
   }
   //game over - player won
   else if (gameProgressState == 1) {
