@@ -7,11 +7,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   startNewGame();
 });
 
+//starts new game
 function startNewGame (){
 
   let gridSize_x = 10;
   let gridSize_y = 10;
-  let mineCount = 10;
+  let mineCount = 20;
 
   gameState = generatedGameState(gridSize_x, gridSize_y, mineCount);
 
@@ -72,8 +73,7 @@ function checkForEndGame(cellIndex) {
   if (mineClicked) result  = 0;
 
   //todo: check for victory
-
-
+  if (mineClicked) result = 1;
 
   return result;
 }
@@ -135,16 +135,20 @@ function gridCell_onClick(e){
     targetCellDom.classList.add("Mine");
 
     isGameOver = true;
-    alert(document.getElementsByClassName(".Question2").style.visibility = "block");
-    // confirm("Do you want to play a new game?")
-    // autoamtically switches to a new screen, not needed!
+    
+    document.getElementById("Won") = function() {
+      document.getElementById("Won").style.display = "none";
+    }
+    // automatically switches to a new screen, not needed!
     //gridDom.innerHTML = "Game Over";
     //todo: refacture
-    //alert("You're dead!")
+  alert("You're dead!")
   }
   //game over - player won
   else if (gameProgressState == 1) {
-    document.querySelector(".Question1").style.display = "block";
+    document.getElementById("Lost") = function() {
+      document.getElementById("Lost").style.display = "none";
+    }
   }
   //game is still in progress
   else if (gameProgressState == 2) {
