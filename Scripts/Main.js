@@ -52,10 +52,8 @@ function bindUI(gameState) {
     gridDom.appendChild(fieldDom);
 
     if (gameState[i] == true) {
-      // starting game, without visible mines
+      // starting game, with visible mines. not needed
       //fieldDom.innerHTML = "*";
-
-
     }
 
     fieldDom.addEventListener("click", gridCell_onClick);
@@ -137,8 +135,8 @@ function gridCell_onClick(e){
     targetCellDom.classList.add("Mine");
 
     isGameOver = true;
-    // do you wanna play a new game, chekiraj da izmijenis ok/cancel u yes/no
-    confirm("Do you want to play a new game?")
+    alert(document.getElementsByClassName(".Question2").style.visibility = "block");
+    // confirm("Do you want to play a new game?")
     // autoamtically switches to a new screen, not needed!
     //gridDom.innerHTML = "Game Over";
     //todo: refacture
@@ -146,7 +144,7 @@ function gridCell_onClick(e){
   }
   //game over - player won
   else if (gameProgressState == 1) {
-
+    document.querySelector(".Question1").style.display = "block";
   }
   //game is still in progress
   else if (gameProgressState == 2) {

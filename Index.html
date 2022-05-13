@@ -8,22 +8,22 @@
  <body>
     <div class="container">
       <div class="Question">
-        <div class="Question1">
+        <div class="Question1" style = "hidden">
           You have won!
           <br/>
           <input type="button" value="Start new game" onclick="startNewGame()" />
         </div>
-        <div class="Question2">
+        <div class="Question2" style = "hidden">
           You have Lose!
           <br/>
-          <input type="button" value="Start new game" />
+          <input type="button" value="Start new game" onclick="startNewGame()" />
         </div>
       </div>
       <div class="Grid">
       </div>
     </div>
   </body>
-  <script>
+  <script type="text/javascript">;
     let val = confirm(confirm("Do you want to play a new game?"));
     if (val == true) {
     // here comes new game
