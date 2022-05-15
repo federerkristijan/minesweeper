@@ -19,7 +19,8 @@ function getSettingsFromUI() {
   // iskreno, znam kako u backend napraviti to...cekaj, input kroz html?
   //da; imat ces nekaj u stilu <input type="text" id="gridSizeX" /> ok, budme se sam s time igrao. hvala ti puno!!!aj, drs se onda. mere i ti isto!
   function gridDataFromUser () {
-    
+    let input_x = document.getElementById(gridSize_x).value;
+    let input_y = document.getElementById(gridSize_y).value;
   };
 };
 
@@ -30,6 +31,8 @@ function startNewGame () {
   gridSize_y = 10;
   mineCount = 20;
 
+  //1) comment the gridSize_x, grid_size_y & gameState
+  //2) make new gameState with input_x & input_y
   gameState = generatedGameState(gridSize_x, gridSize_y, mineCount);
 
   bindUI(gameState);
