@@ -9,6 +9,11 @@
   margin-left: 240px;
 }
 
+.UserInput {
+  width: 10x;
+  border: solid 5px, rgb(226, 9, 9);
+}
+
 .Question {
   margin-left: 420px;
   background-color: azure;
@@ -19,7 +24,8 @@
   width: 46px;
   height: 46px;
   background-color: blue;
-  border: solid 1px black;
+  border: solid 2px black;
+  box-shadow: 0.5px 0.5px 0.5px rgb(78, 3, 3);
   float: left;
   box-sizing: border-box;
   text-align: center;
@@ -35,7 +41,6 @@
   background-color: rgb(228, 148, 119);
   background-image: url(../Images/bomb.svg);
   background-size: contain;
-  /*tak. hvala*/
 }
 
 

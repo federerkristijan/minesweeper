@@ -18,10 +18,13 @@ function getSettingsFromUI() {
   //todo: let user provide grid data
   // iskreno, znam kako u backend napraviti to...cekaj, input kroz html?
   //da; imat ces nekaj u stilu <input type="text" id="gridSizeX" /> ok, budme se sam s time igrao. hvala ti puno!!!aj, drs se onda. mere i ti isto!
+  function gridDataFromUser () {
+    
+  };
 };
 
 //starts new game
-function startNewGame (){
+function startNewGame () {
 
   gridSize_x = 10;
   gridSize_y = 10;
@@ -42,9 +45,6 @@ function generatedGameState(gridSize_x, gridSize_y, mineCount) {
     while (generetedMineCount < mineCount) {
 
       let pendingMineIndex = Math.floor(Math.random()*gameState.length);
-
-
-
       if (gameState[pendingMineIndex] != true)
         {
           gameState[pendingMineIndex] = true;
